@@ -1808,3 +1808,60 @@ textarea:focus {
     height: 220px;
   }
 }
+
+/* Sales-demo additions */
+.demo-banner {
+  position: relative;
+  z-index: 20;
+  padding: .55rem 1rem;
+  color: #c9f7ff;
+  background: rgba(8, 47, 73, .96);
+  border-bottom: 1px solid rgba(34, 211, 238, .28);
+  text-align: center;
+  font-size: .82rem;
+  letter-spacing: .02em;
+}
+
+.demo-disclosure {
+  padding: 1.25rem;
+  border: 1px solid rgba(34, 211, 238, .25);
+  border-radius: 16px;
+  background: rgba(8, 20, 40, .75);
+  color: var(--muted);
+}
+
+.demo-disclosure strong { color: var(--text); }
+.demo-disclosure p { margin: .4rem 0 0; }
+.demo-chat-notice {
+  padding: .55rem .8rem;
+  color: #bae6fd;
+  background: rgba(8, 47, 73, .85);
+  font-size: .74rem;
+  text-align: center;
+}
+.package-label {
+  display: inline-flex;
+  margin-bottom: .65rem;
+  padding: .3rem .65rem;
+  border: 1px solid rgba(34, 211, 238, .35);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.sales-packages { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.price-card .button { margin-top: auto; }
+.price-card { display: flex; flex-direction: column; }
+.price-card .checklist { flex: 1; }
+
+@media (max-width: 900px) {
+  .sales-packages { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .demo-banner { font-size: .72rem; }
+  .chat-widget { bottom: 12px; right: 12px; }
+  .chat-bubble { transform: scale(.88); transform-origin: right bottom; }
+}

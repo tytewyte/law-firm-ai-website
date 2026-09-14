@@ -107,7 +107,39 @@ async function copyToClipboard(text) {
 }
 
 function setupContactForm() {
-  return;
+  const form = qs('[data-email-form]');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const data = new FormData(form);
+    const subject = `Velocity Leads inquiry — ${data.get('firm') || data.get('name')}`;
+    const body = [
+      `Name: ${data.get('name')}`,
+      `Email: ${data.get('email')}`,
+      `Firm: ${data.get('firm') || 'Not provided'}`,
+      `Practice area(s): ${data.get('practice') || 'Not provided'}`,
+      '',
+      'Current intake challenge:',
+      data.get('message')
+    ].join('\\n');
+
+    showToast('Opening your email app with the inquiry prepared.');
+    window.location.href = `mailto:contactavantaisolutions@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}
+
+function setupDemoLaunchers() {
+  qsa('[data-open-chat]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const bubble = qs('#chat-bubble');
+      const windowElement = qs('#chat-window');
+      if (bubble && getComputedStyle(bubble).display !== 'none') bubble.click();
+      else if (windowElement) windowElement.style.display = 'block';
+    });
+  });
 }
 
 function setupCtaTracking() {
@@ -241,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMobileNav();
   setupAccordion();
   setupContactForm();
+  setupDemoLaunchers();
   setupCtaTracking();
   setupMatrixBackground();
 });

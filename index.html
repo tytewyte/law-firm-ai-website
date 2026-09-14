@@ -3,20 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Stop losing clients while you sleep. Velocity Leads builds 24/7 AI-powered intake systems that turn every website visitor into a qualified lead. The future of legal intake is here." />
-    <title>Velocity Leads — Stop Losing Clients While You Sleep | AI Intake for Law Firms</title>
-    
-    <!-- Open Graph / Facebook -->
+    <meta name="description" content="See how a custom 24/7 intake experience can qualify law-firm inquiries, route leads, and help book consultations." />
+    <meta name="theme-color" content="#07101f" />
+    <link rel="canonical" href="https://law-firm-ai-website.vercel.app/" />
+    <title>Velocity Leads — Custom AI Intake Systems for Law Firms</title>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Velocity Leads — AI Intake Systems That Never Sleep" />
-    <meta property="og:description" content="Turn your law firm website into a 24/7 client-capturing machine. AI-powered intake that converts visitors into qualified leads instantly." />
-    <meta property="og:image" content="https://velocityleads.com/og-image.jpg" />
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Velocity Leads — AI Intake Systems for Law Firms" />
-    <meta name="twitter:description" content="Stop losing clients while you sleep. 24/7 AI-powered intake that converts." />
-    <meta name="twitter:image" content="https://velocityleads.com/twitter-image.jpg" />
+    <meta property="og:title" content="Velocity Leads — Custom AI Intake Systems for Law Firms" />
+    <meta property="og:description" content="Try an interactive example, then see how the design, questions, routing, and follow-up can be tailored to your firm." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Velocity Leads — Custom AI Intake Systems for Law Firms" />
+    <meta name="twitter:description" content="A customizable 24/7 intake experience for law firms." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -24,18 +21,13 @@
     <link rel="stylesheet" href="chat-widget.css" />
     <script src="script.js" defer></script>
     <script src="chat-widget.js" defer></script>
-    
-    <!-- Hidden form for Netlify Forms to detect chat leads -->
-    <form name="chat-lead" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="text" name="phone" />
-      <input type="email" name="email" />
-      <input type="text" name="case-type" />
-      <input type="text" name="description" />
-    </form>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="demo-banner" role="note">
+      Interactive sales demo — every screen, question, and handoff can be customized for a law firm.
+    </div>
 
     <header class="site-header" id="top">
       <div class="container header-inner">
@@ -43,21 +35,17 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-text">Velocity Leads</span>
         </a>
-
         <nav class="nav" aria-label="Primary">
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
             <span class="nav-toggle-bars" aria-hidden="true"></span>
             <span class="sr-only">Open menu</span>
           </button>
-
           <div class="nav-menu" id="nav-menu">
-            <a class="nav-link" href="#problem">The Problem</a>
-            <a class="nav-link" href="#system">Our System</a>
-            <a class="nav-link" href="#why">Why It Works</a>
-            <a class="nav-link" href="#testimonials">Success Stories</a>
-            <a class="nav-link" href="#pricing">Pricing</a>
-            <a class="button button-secondary nav-auth" href="signin.html">Sign In</a>
-            <a class="button button-primary nav-cta" href="signup.html" data-cta="sign-up">Sign Up</a>
+            <a class="nav-link" href="#system">What You Get</a>
+            <a class="nav-link" href="#demo">Live Demo</a>
+            <a class="nav-link" href="#customize">Customization</a>
+            <a class="nav-link" href="#pricing">Packages</a>
+            <a class="button button-primary nav-cta" href="#contact" data-cta="book-walkthrough">Book a Walkthrough</a>
           </div>
         </nav>
       </div>
@@ -67,47 +55,32 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">The Future of Legal Intake</p>
-            <h1 class="hero-title">Stop Losing Clients While You Sleep</h1>
-            <p class="hero-subtitle">Your competitors are stealing your leads. Not anymore.</p>
+            <p class="eyebrow">Custom AI Intake Systems for Law Firms</p>
+            <h1 class="hero-title">Turn More Website Visitors Into Consultations</h1>
+            <p class="hero-subtitle">Show potential clients the next step—even when your office is closed.</p>
             <p class="hero-lede">
-              Every minute your website sits idle, potential clients are choosing another firm. Velocity Leads turns your website into a 24/7 AI-powered client-capturing machine that <strong>never misses a lead</strong>.<br />
-              <span class="hero-highlight">Always on. Always converting. Always winning.</span>
+              Velocity Leads creates a branded intake experience that can answer approved questions, collect the details your firm chooses, and route each inquiry to your preferred next step.
+              <br /><span class="hero-highlight">Your brand. Your workflow. Your rules.</span>
             </p>
-            <p class="hero-note">Special Launch Offer — 50% off for the next 6 months</p>
-
+            <p class="hero-note">This is an interactive example, not a one-size-fits-all template.</p>
             <div class="hero-actions">
-              <a class="button button-primary button-pulse" href="#contact" data-cta="get-started">Claim Your Spot Now</a>
-              <a class="button button-secondary" href="#system">See How It Works</a>
+              <button class="button button-primary button-pulse" type="button" data-open-chat data-cta="try-demo">Try the Intake Demo</button>
+              <a class="button button-secondary" href="#pricing">See Packages</a>
             </div>
-            <p class="hero-urgency"><strong>Sign up now and get 50% off</strong> your first 3 months</p>
-
-            <div class="hero-proof neon-counters">
-              <div class="proof-item">
-                <div class="proof-number">0 sec delay</div>
-                <div class="proof-label">Instant greetings</div>
-              </div>
-              <div class="proof-item">
-                <div class="proof-number">24/7</div>
-                <div class="proof-label">Lead coverage</div>
-              </div>
-              <div class="proof-item">
-                <div class="proof-number">100%</div>
-                <div class="proof-label">Conversation transcripts</div>
-              </div>
+            <div class="hero-proof neon-counters" aria-label="Service highlights">
+              <div class="proof-item"><div class="proof-number">Custom</div><div class="proof-label">Practice-area paths</div></div>
+              <div class="proof-item"><div class="proof-number">24/7</div><div class="proof-label">Visitor guidance</div></div>
+              <div class="proof-item"><div class="proof-number">Direct</div><div class="proof-label">Lead handoff</div></div>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
-            <div class="hero-orb"></div>
-            <div class="hero-gridlines"></div>
+            <div class="hero-orb"></div><div class="hero-gridlines"></div>
             <div class="hero-panel">
-              <div class="hero-panel-heading">Velocity Matrix Interface</div>
+              <div class="hero-panel-heading">Example Intake Handoff</div>
               <ul class="hero-panel-list">
-                <li>Real-time intake orchestration</li>
-                <li>Neural lead scoring</li>
-                <li>Secure transcript sync</li>
+                <li>Practice area identified</li><li>Firm-approved questions asked</li><li>Next action clearly routed</li>
               </ul>
-              <div class="hero-panel-footer">Live · Synced · Attorney-ready</div>
+              <div class="hero-panel-footer">Branded · Configurable · Attorney-reviewed</div>
             </div>
           </div>
         </div>
@@ -116,409 +89,113 @@
       <section class="section" id="problem">
         <div class="container problem-grid">
           <div>
-            <div class="section-eyebrow">THE BRUTAL TRUTH</div>
-            <h2>You're Losing $10,000+ Per Month</h2>
-            <p class="section-lede">While you sleep, your competitors are capturing the clients you'll never meet. Here's why:</p>
-            <div class="stat-highlight">
-              <span class="stat-number">73%</span>
-              <span class="stat-text">of potential clients leave law firm websites without contacting anyone</span>
-            </div>
+            <div class="section-eyebrow">THE INTAKE GAP</div>
+            <h2>Most Law-Firm Websites Stop at a Contact Form</h2>
+            <p class="section-lede">A visitor may be ready to act, but a generic form gives them no guidance and gives the firm very little context.</p>
+            <div class="stat-highlight"><span class="stat-number">One goal</span><span class="stat-text">Make the next step obvious for both the potential client and the firm.</span></div>
           </div>
           <div class="problem-cards">
-            <article class="problem-card">
-              <h3>Visitors Vanish in Seconds</h3>
-              <p>No instant response = instant bounce. They're gone before you even know they existed.</p>
-            </article>
-            <article class="problem-card">
-              <h3>After-Hours = Lost Revenue</h3>
-              <p><strong>40% of inquiries happen after 5pm.</strong> Your voicemail isn't converting anyone.</p>
-            </article>
-            <article class="problem-card">
-              <h3>Contact Forms Are Dead</h3>
-              <p>Static forms don't qualify, don't engage, and attract time-wasters. You deserve better.</p>
-            </article>
-            <article class="problem-card">
-              <h3>Clients Expect Instant Answers</h3>
-              <p>The firm that responds first wins. Every delayed response is money left on the table.</p>
-            </article>
+            <article class="problem-card"><h3>After-Hours Questions</h3><p>Visitors can be guided through approved information when staff are unavailable.</p></article>
+            <article class="problem-card"><h3>Generic Submissions</h3><p>Each practice area can ask different, attorney-approved intake questions.</p></article>
+            <article class="problem-card"><h3>Slow Handoffs</h3><p>Qualified inquiries can be routed to email, text, scheduling, or another approved system.</p></article>
+            <article class="problem-card"><h3>Missing Context</h3><p>The firm receives a structured summary instead of an unclear one-line message.</p></article>
           </div>
-          <div class="problem-footer">
-            <strong>Velocity Leads ends this nightmare.</strong> Your AI agent captures every lead, 24/7/365.
-          </div>
+          <div class="problem-footer"><strong>Velocity Leads builds the bridge</strong> between website interest and the firm’s real intake process.</div>
         </div>
       </section>
 
       <section class="section section-muted" id="system">
         <div class="container">
-          <div class="section-head">
-            <div class="section-eyebrow">SECTION 3 — WHAT WE BUILD</div>
-            <h2>Your Firm’s Digital Intake System</h2>
-            <p>A modern AI agent that feels like a real assistant — not a chatbot.</p>
-          </div>
-
-        <div class="system-grid">
-          <div class="system-summary">
-            <p>Your AI agent can:</p>
-            <ul class="system-list">
-              <li>Greet visitors instantly</li>
-              <li>Ask qualifying questions</li>
-              <li>Capture contact info</li>
-              <li>Schedule consultations</li>
-              <li>Send transcripts to your inbox</li>
-              <li>Filter out time-wasters</li>
-              <li>Operate 24/7 without missing a lead</li>
-            </ul>
-            <p class="system-note">All wrapped in a sleek, futuristic interface that matches your brand.</p>
-          </div>
-          <div class="system-visual">
-            <div class="system-panels">
-              <div class="panel-card">
-                <div class="panel-title">Intake Flow</div>
-                <p>Dynamic questioning paths triggered by practice area and matter type.</p>
-              </div>
-              <div class="panel-card">
-                <div class="panel-title">Consult Scheduler</div>
-                <p>Syncs with your calendar to propose consult windows automatically.</p>
-              </div>
-              <div class="panel-card">
-                <div class="panel-title">Lead Stream</div>
-                <p>Qualified leads and transcripts dispatched to your inbox or CRM in seconds.</p>
-              </div>
+          <div class="section-head"><div class="section-eyebrow">WHAT THE FIRM RECEIVES</div><h2>A Complete, Branded Intake Experience</h2><p>Start small, review the workflow with the attorney, and expand only where it creates value.</p></div>
+          <div class="system-grid">
+            <div class="system-summary">
+              <p>A typical system can include:</p>
+              <ul class="system-list">
+                <li>Firm-branded website assistant</li><li>Practice-area intake paths</li><li>Attorney-approved answers and disclaimers</li><li>Contact and consultation handoff</li><li>Email or text lead notifications</li><li>Conversation summaries</li><li>Monthly question and workflow updates</li>
+              </ul>
+              <p class="system-note">The attorney approves the questions, language, and destination before launch.</p>
             </div>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <section class="section" id="why">
-        <div class="container">
-          <div class="section-head">
-            <div class="section-eyebrow">SECTION 4 — WHY IT WORKS</div>
-            <h2>Built for Lawyers. Engineered for Results.</h2>
-          </div>
-
-          <div class="grid cards-4">
-            <article class="stat-card">
-              <h3>Instant Engagement</h3>
-              <p>Your AI agent responds in milliseconds — before your competitor even loads.</p>
-            </article>
-
-            <article class="stat-card">
-              <h3>Intelligent Intake</h3>
-              <p>Adaptive questioning that feels natural, not scripted.</p>
-            </article>
-
-            <article class="stat-card">
-              <h3>Secure &amp; Private</h3>
-              <p>Designed with attorney-client confidentiality in mind.</p>
-            </article>
-
-            <article class="stat-card">
-              <h3>Conversion Boost</h3>
-              <p>More conversations → more consultations → more clients.</p>
-            </article>
+            <div class="system-visual"><div class="system-panels">
+              <div class="panel-card"><div class="panel-title">1 · Engage</div><p>Welcome the visitor in the firm’s tone and identify the reason for the inquiry.</p></div>
+              <div class="panel-card"><div class="panel-title">2 · Qualify</div><p>Ask only the practice-area questions the firm has reviewed and approved.</p></div>
+              <div class="panel-card"><div class="panel-title">3 · Route</div><p>Send the visitor to the right consultation, contact method, or staff follow-up.</p></div>
+            </div></div>
           </div>
         </div>
       </section>
 
-      <section class="section section-muted" id="testimonials">
-        <div class="container">
-          <div class="section-head">
-            <div class="section-eyebrow">SUCCESS STORIES</div>
-            <h2>Real Firms. Real Results.</h2>
-            <p>Law firms using Velocity Leads are capturing more leads, closing more clients, and sleeping better at night.</p>
-          </div>
-
-          <div class="testimonials-grid">
-            <article class="testimonial-card">
-              <blockquote class="testimonial-quote">
-                "We went from missing 60% of after-hours inquiries to capturing every single one. Our consultation bookings tripled in the first month."
-              </blockquote>
-              <div class="testimonial-author">
-                <strong>Michael Rodriguez</strong>
-                <span>Personal Injury · Houston, TX</span>
-              </div>
-              <div class="testimonial-stat">
-                <span class="stat-number">3x</span>
-                <span class="stat-label">More Consultations</span>
-              </div>
-            </article>
-
-            <article class="testimonial-card">
-              <blockquote class="testimonial-quote">
-                "The AI agent qualifies leads better than our receptionist. We're spending time with serious clients, not tire-kickers. Game changer."
-              </blockquote>
-              <div class="testimonial-author">
-                <strong>Sarah Chen</strong>
-                <span>Family Law · San Francisco, CA</span>
-              </div>
-              <div class="testimonial-stat">
-                <span class="stat-number">85%</span>
-                <span class="stat-label">Better Lead Quality</span>
-              </div>
-            </article>
-
-            <article class="testimonial-card">
-              <blockquote class="testimonial-quote">
-                "ROI was instant. First qualified lead came in at 2am on a Sunday. That case alone paid for 6 months of service."
-              </blockquote>
-              <div class="testimonial-author">
-                <strong>James Patterson</strong>
-                <span>Immigration Law · Miami, FL</span>
-              </div>
-              <div class="testimonial-stat">
-                <span class="stat-number">$47K</span>
-                <span class="stat-label">First Month Revenue</span>
-              </div>
-            </article>
-          </div>
-
-          <div class="social-proof">
-            <div class="proof-badge">
-              <strong>50+</strong>
-              <span>Law Firms Trust Us</span>
-            </div>
-            <div class="proof-badge">
-              <strong>4.9/5</strong>
-              <span>Average Rating</span>
-            </div>
-            <div class="proof-badge">
-              <strong>10,000+</strong>
-              <span>Leads Captured</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="transformation">
+      <section class="section" id="demo">
         <div class="container transformation-wrap">
-          <div class="section-head">
-            <div class="section-eyebrow">THE NEW BEGINNING</div>
-            <h2>This Is Your Transformation Moment</h2>
-            <p class="section-lede">The legal industry is evolving. Firms that embrace AI-powered intake are dominating their markets. The question isn't whether to upgrade—it's whether you'll lead or follow.</p>
-          </div>
-
+          <div class="section-head"><div class="section-eyebrow">INTERACTIVE EXAMPLE</div><h2>Try It Like a Potential Client</h2><p class="section-lede">Choose a sample practice area and watch how the assistant changes the questions and produces a structured handoff.</p></div>
           <div class="transformation-grid">
-            <div class="transformation-column">
-              <h3 class="transformation-title">The Old Way</h3>
-              <ul class="transformation-list old">
-                <li>Contact forms that sit unanswered</li>
-                <li>Voicemails that never convert</li>
-                <li>Leads lost to faster competitors</li>
-                <li>Manual qualification wasting time</li>
-                <li>Zero visibility into after-hours traffic</li>
-                <li>Guessing which leads are worth pursuing</li>
-              </ul>
-            </div>
-
+            <div class="transformation-column"><h3 class="transformation-title">What the visitor sees</h3><ul class="transformation-list new"><li>A clear welcome and disclaimer</li><li>Simple practice-area choices</li><li>Relevant follow-up questions</li><li>An obvious next step</li></ul></div>
             <div class="transformation-arrow">→</div>
-
-            <div class="transformation-column">
-              <h3 class="transformation-title">The Velocity Way</h3>
-              <ul class="transformation-list new">
-                <li>Instant AI responses 24/7/365</li>
-                <li>Every conversation captured & qualified</li>
-                <li>First-responder advantage every time</li>
-                <li>AI pre-qualifies before you engage</li>
-                <li>Complete visibility into all inquiries</li>
-                <li>Data-driven decisions on every lead</li>
-              </ul>
-            </div>
+            <div class="transformation-column"><h3 class="transformation-title">What the attorney receives</h3><ul class="transformation-list new"><li>Reason for inquiry</li><li>Answers to approved questions</li><li>Contact preference in a live build</li><li>Readable conversation summary</li></ul></div>
           </div>
-
-          <div class="transformation-cta">
-            <p class="transformation-message">
-              <strong>This is your moment.</strong> The firms that adopt AI intake now will dominate 2026. The firms that wait will wonder where their clients went.
-            </p>
-            <a class="button button-primary button-pulse" href="#contact">Start Your Transformation</a>
-          </div>
+          <div class="transformation-cta"><p class="transformation-message"><strong>Safe demo mode:</strong> no information entered in this example is transmitted or saved. Do not enter real or confidential case information.</p><button class="button button-primary" type="button" data-open-chat>Open the Demo</button></div>
         </div>
       </section>
 
-      <section class="section section-muted" id="aesthetic">
-        <div class="container aesthetic-wrap">
-          <div>
-            <div class="section-eyebrow">SECTION 5 — MODERN MATRIX-TECH AESTHETIC</div>
-            <h2>A New Era of Digital Intelligence</h2>
-            <p class="section-lede">
-              Your website transforms into a living system — a neural interface that analyzes, qualifies, and routes leads with
-              precision.
-            </p>
-            <p>No gimmicks. No outdated “chat bubbles.” Just clean, futuristic design powered by real AI.</p>
-          </div>
-          <ul class="aesthetic-list">
-            <li>Dark mode foundations</li>
-            <li>Neon accents &amp; soft glow UI</li>
-            <li>Holographic panels &amp; smooth animations</li>
-            <li>High-tech typography &amp; motion</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="pricing">
+      <section class="section section-muted" id="customize">
         <div class="container">
-          <div class="section-head">
-            <div class="section-eyebrow">SECTION 6 — PRICING</div>
-            <h2>Simple, Transparent Pricing</h2>
+          <div class="section-head"><div class="section-eyebrow">BUILT AROUND THE FIRM</div><h2>Nearly Every Visible Part Can Change</h2><p>The demo proves the workflow. The delivered version should look and sound like the attorney’s own firm.</p></div>
+          <div class="grid cards-4">
+            <article class="stat-card"><h3>Brand &amp; Design</h3><p>Colors, typography, logo, layout, assistant name, and tone.</p></article>
+            <article class="stat-card"><h3>Practice Areas</h3><p>Separate paths for family law, injury, immigration, estates, business, and more.</p></article>
+            <article class="stat-card"><h3>Questions &amp; Rules</h3><p>Attorney-reviewed questions, disclaimers, exclusions, urgency flags, and office policies.</p></article>
+            <article class="stat-card"><h3>Handoffs</h3><p>Email, SMS, calendar, phone, intake staff, CRM, or another approved destination.</p></article>
           </div>
+        </div>
+      </section>
 
-          <div class="pricing-grid single-plan">
-            <article class="price-card featured" aria-label="Velocity Leads AI Intake Agent">
-              <div class="price-top">
-                <h3>AI Intake Agent</h3>
-                <p class="price-sub">$297 / month</p>
-              </div>
-              <ul class="checklist" aria-label="AI Intake Agent inclusions">
-                <li>Custom AI agent</li>
-                <li>Full intake flow</li>
-                <li>Lead dashboard</li>
-                <li>Unlimited conversations</li>
-                <li>Automatic updates</li>
-                <li>Email + SMS lead alerts</li>
-              </ul>
-            </article>
+      <section class="section" id="process">
+        <div class="container">
+          <div class="section-head"><div class="section-eyebrow">A SIMPLE DELIVERY PROCESS</div><h2>From Firm Interview to Working Intake</h2></div>
+          <div class="grid cards-4">
+            <article class="stat-card"><h3>1. Map</h3><p>Learn the firm’s practice areas, current intake process, common questions, and desired handoff.</p></article>
+            <article class="stat-card"><h3>2. Build</h3><p>Customize the design, questions, conversation paths, and lead destinations.</p></article>
+            <article class="stat-card"><h3>3. Review</h3><p>The attorney tests the experience and approves the language before launch.</p></article>
+            <article class="stat-card"><h3>4. Improve</h3><p>Review usage, refine questions, and update the workflow as the firm learns.</p></article>
+          </div>
+        </div>
+      </section>
 
-            <article class="price-card">
-              <div class="price-top">
-                <h3>Website Build (Optional)</h3>
-                <p class="price-sub">Starting at $500</p>
-              </div>
-              <ul class="checklist" aria-label="Website build inclusions">
-                <li>Modern, fast, mobile-optimized</li>
-                <li>Conversion-focused layout</li>
-                <li>Integrated with your AI agent</li>
-                <li>Analytics + lead tracking setup</li>
-              </ul>
-            </article>
+      <section class="section section-muted" id="pricing">
+        <div class="container">
+          <div class="section-head"><div class="section-eyebrow">START WITH A CLEAR PACKAGE</div><h2>Choose the Level That Fits the Firm</h2><p>Final scope and third-party usage costs are confirmed in writing before work begins.</p></div>
+          <div class="pricing-grid sales-packages">
+            <article class="price-card featured"><div class="price-top"><span class="package-label">First 3 firms</span><h3>Founding Firm</h3><p class="price-sub">$750 setup + $297/month</p></div><ul class="checklist"><li>Custom intake demo</li><li>One primary practice-area path</li><li>Email lead handoff</li><li>Attorney review round</li><li>Monthly tune-up</li></ul><a class="button button-primary" href="#contact">Request a Founding Spot</a></article>
+            <article class="price-card"><div class="price-top"><h3>Intake System</h3><p class="price-sub">$1,500 setup + $497/month</p></div><ul class="checklist"><li>Website assistant installation</li><li>Multiple intake paths</li><li>Scheduling handoff</li><li>Email or text routing</li><li>Conversation summaries</li><li>Monthly optimization</li></ul><a class="button button-secondary" href="#contact">Discuss Your Workflow</a></article>
+            <article class="price-card"><div class="price-top"><h3>Website + Intake</h3><p class="price-sub">Starting at $3,000 + $497/month</p></div><ul class="checklist"><li>Custom conversion-focused website</li><li>Branded intake assistant</li><li>Analytics setup</li><li>Mobile and accessibility review</li><li>Launch and staff handoff</li></ul><a class="button button-secondary" href="#contact">Plan a Custom Build</a></article>
           </div>
         </div>
       </section>
 
       <section class="section section-highlight" id="cta">
-        <div class="container cta-wrap">
-          <div>
-            <div class="section-eyebrow">SECTION 7 — CALL TO ACTION</div>
-            <h2>Upgrade Your Firm’s Digital Presence</h2>
-            <p>Your clients live in a real-time world. Your website should too.</p>
-            <p class="cta-note">Let Velocity Leads build your firm’s AI-powered intake system.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="button button-primary" href="#contact" data-cta="book-demo">Book a Demo</a>
-            <a class="button button-secondary" href="#contact" data-cta="start-today">Start Today</a>
-          </div>
-        </div>
+        <div class="container cta-wrap"><div><div class="section-eyebrow">SEE YOUR FIRM’S VERSION</div><h2>Start With a Short Intake Walkthrough</h2><p>We’ll map one practice area and show what the visitor and attorney would each experience.</p></div><div class="cta-actions"><a class="button button-primary" href="#contact">Book a Walkthrough</a><button class="button button-secondary" type="button" data-open-chat>Try the Demo</button></div></div>
       </section>
 
       <section class="section" id="contact">
         <div class="container">
-          <div class="section-head">
-            <div class="section-eyebrow">SECTION 8 — CONNECT</div>
-            <h2>Book a build session</h2>
-            <p>Tell us your practice areas and intake goals. We’ll map the Velocity Leads intake flow for your firm.</p>
-          </div>
-
+          <div class="section-head"><div class="section-eyebrow">LET’S MAP THE FIRST WORKFLOW</div><h2>Tell Me About the Firm</h2><p>Share the practice area and current intake challenge. The form prepares an email in your own email app.</p></div>
           <div class="contact-grid">
             <div class="contact-cards" aria-label="Contact methods">
-              <div class="contact-card">
-                <div class="contact-title">Phone</div>
-                <a class="contact-link" href="tel:+13376607184">337-660-7184</a>
-              </div>
-              <div class="contact-card">
-                <div class="contact-title">Email</div>
-                <a class="contact-link" href="mailto:contactavantaisolutions@protonmail.com">contactavantaisolutions@protonmail.com</a>
-              </div>
+              <div class="contact-card"><div class="contact-title">Phone</div><a class="contact-link" href="tel:+13376607184">337-660-7184</a></div>
+              <div class="contact-card"><div class="contact-title">Email</div><a class="contact-link" href="mailto:contactavantaisolutions@protonmail.com">contactavantaisolutions@protonmail.com</a></div>
             </div>
-
-            <form
-              class="form"
-              id="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              action="thanks.html"
-              aria-label="Contact form"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <p class="sr-only">
-                <label>
-                  Don’t fill this out if you’re human:
-                  <input name="bot-field" />
-                </label>
-              </p>
-              <div class="form-row">
-                <label>
-                  <span>Name</span>
-                  <input name="name" autocomplete="name" required />
-                </label>
-                <label>
-                  <span>Email</span>
-                  <input name="email" type="email" autocomplete="email" required />
-                </label>
-              </div>
-
-              <div class="form-row">
-                <label>
-                  <span>Firm name</span>
-                  <input name="firm" autocomplete="organization" />
-                </label>
-                <label>
-                  <span>Practice area(s)</span>
-                  <input name="practice" placeholder="e.g., PI, Family, Immigration" />
-                </label>
-              </div>
-
-              <label>
-                <span>Message</span>
-                <textarea name="message" rows="5" placeholder="Tell us your goals and current intake process" required></textarea>
-              </label>
-
-              <div class="form-actions">
-                <button class="button button-primary" type="submit">Book a Demo</button>
-                <p class="form-note">
-                  By submitting, you agree to be contacted about Velocity Leads. Velocity Leads provides software for law
-                  firms and does not provide legal advice. Submissions do not create an attorney-client relationship.
-                </p>
-              </div>
-
-              <div class="form-success" role="status" aria-live="polite" hidden>
-                Thanks—your message has been sent.
-              </div>
+            <form class="form" id="contact-form" data-email-form aria-label="Sales inquiry form">
+              <div class="form-row"><label><span>Name</span><input name="name" autocomplete="name" required /></label><label><span>Email</span><input name="email" type="email" autocomplete="email" required /></label></div>
+              <div class="form-row"><label><span>Firm name</span><input name="firm" autocomplete="organization" /></label><label><span>Practice area(s)</span><input name="practice" placeholder="e.g., Family, Estates, Immigration" /></label></div>
+              <label><span>Current intake challenge</span><textarea name="message" rows="5" placeholder="What happens when a potential client contacts the firm today?" required></textarea></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Prepare My Email</button><p class="form-note">Submitting opens a pre-addressed email in your device’s email app. Nothing is stored by this demo website.</p></div>
             </form>
-
-            <div class="map" aria-label="Map">
-              <iframe
-                title="Velocity Leads location"
-                loading="lazy"
-                src="https://www.google.com/maps?q=Alexandria%20LA&output=embed"
-              ></iframe>
-              <div class="map-caption">Based in Alexandria, LA, serving firms nationwide</div>
-            </div>
+            <div class="demo-disclosure"><strong>Demo disclosure</strong><p>Velocity Leads is a technology service, not a law firm. This website does not provide legal advice, create an attorney-client relationship, or accept confidential case information.</p></div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-left">
-          <div class="footer-brand">Velocity Leads</div>
-          <div class="footer-meta">© <span id="year"></span> Velocity Leads. All rights reserved.</div>
-        </div>
-
-        <div class="footer-links" aria-label="Footer links">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </footer>
-
-    <div class="toast" id="toast" role="status" aria-live="polite" hidden>
-      <div class="toast-inner">
-        <div class="toast-title">Copied</div>
-        <div class="toast-text">A draft message is in your clipboard.</div>
-      </div>
-    </div>
+    <footer class="footer"><div class="container footer-inner"><div class="footer-left"><div class="footer-brand">Velocity Leads</div><div class="footer-meta">© <span id="year"></span> Velocity Leads. All rights reserved.</div></div><div class="footer-links"><a href="privacy.html">Privacy &amp; Demo Notice</a><a href="#pricing">Packages</a><a href="#contact">Contact</a></div></div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden><div class="toast-inner"><div class="toast-title">Ready</div><div class="toast-text">Your next step is ready.</div></div></div>
   </body>
 </html>
